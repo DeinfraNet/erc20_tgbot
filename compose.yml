@@ -2,9 +2,8 @@ services:
   erc20_notify_bot:
     build: .
     volumes:
-      - ./data:/data
+      - .:/data
     environment:
       - TELEGRAM_TOKEN=<TG_TOKEN>
       - ERC20_TOKEN_ADDRESS=<TOKEN_ADDRESS>
       - ETH_RPC_URL=https://c3n1.thepower.io:1446/jsonrpc
-
