@@ -4,6 +4,6 @@ services:
     volumes:
       - .:/data
     environment:
-      - TELEGRAM_TOKEN=<TG_TOKEN>
-      - ERC20_TOKEN_ADDRESS=<TOKEN_ADDRESS>
-      - ETH_RPC_URL=https://c3n1.thepower.io:1446/jsonrpc
+      - TELEGRAM_TOKEN=${TELEGRAM_TOKEN}
+      - ERC20_TOKEN_ADDRESS=${ERC20_TOKEN_ADDRESS}
+      - ETH_RPC_URL=${ETH_RPC_URL}
