@@ -2,12 +2,28 @@
 
 This guide describes the steps to configure and launch an ERC20 Telegram bot.
 
+
 1. **Clone the repository**  
     Run the following command to clone the repository:
 
    ```bash
    git clone https://github.com/DeinfraNet/erc20_tgbot
    cd erc20_tgbot
+   ```
+
+2. Create a `.env` file in the root directory of the project and add the following environment variables:
+
+   ```bash
+   TELEGRAM_TOKEN=YOUR_TOKEN
+   ERC20_TOKEN_ADDRESS=0x917467C4e68eE1eD6dc144359AD22529E6A9E390
+   ETH_RPC_URL=https://c3n1.thepower.io:1446/jsonrpc
+   ```
+
+3. Create key folder
+
+   ```bash
+   mkdir ../erc20_bot_keys
+   cd ../erc20_bot_keys
    ```
 
 2. **Register an account**  
