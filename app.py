@@ -145,7 +145,7 @@ def poll_events(context: CallbackContext):
                         context.bot.send_message(
                                 chat_id=tg_id,
                                 text=(
-                                    f"Transaction detected from {to_address}\n"
+                                    f"Transaction detected to {to_address}\n"
                                     f"value: {web3.from_wei(value, 'ether')}\n"
                                     f"current {monitored_address} balance: {web3.from_wei(balance, 'ether')} tokens.\n"
                                     )
