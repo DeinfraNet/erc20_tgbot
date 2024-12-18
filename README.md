@@ -63,7 +63,7 @@ This guide describes the steps to configure and launch an ERC20 Telegram bot.
     After creating the container, upload it using this command:
 
    ```bash
-   tpe container upload -k <your_key.pem> -i <index> -f <key_file> -t <path> -g "[filePath,filePath]"
+   tpe container upload -k <your_key.pem> -i <index> -f <container_key_file> -t <path>
    ```
 
    Example:
@@ -76,7 +76,7 @@ This guide describes the steps to configure and launch an ERC20 Telegram bot.
     Execute the following command to start the container:
 
    ```bash
-   tpe container actions -m container_start -i <index> -f <key_file> -p <parameter>
+   tpe container actions -m container_start -i <index> -f <container_key_file> -p <parameter>
    ```
 
    Example:
